@@ -1,0 +1,1 @@
+# ACNH-Aesthetic-Rarity-Guide
