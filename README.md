@@ -17,6 +17,7 @@ This tool helps *Animal Crossing New Horizons (ACNH)* players plan a five-star i
 ### Prerequisites
 - Python
 - pandas library
+- numpy
 
 ### Installation
 1. Clone this repo.
