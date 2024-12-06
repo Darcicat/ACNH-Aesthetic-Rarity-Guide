@@ -1,11 +1,10 @@
 # ACNH-Aesthetic-Rarity-Guide
 ## Overview
-This tool helps *Animal Crossing New Horizons (ACNH)* players plan a five-star island aesthetic by cataloging item rarity, ideal gifts for villagers per their personality, and optimal conditions for catching fish and insects.
+This tool helps *Animal Crossing New Horizons (ACNH)* players plan a five-star island aesthetic by cataloging item rarity, and ideal gifts for villagers per their personality.
 
 ## Features
 - **Item Rarity**: Track rarity, seasonality, customization, and item sources.
 - **Villager Gift Recommendations**: Identify the best gifts for each villager based on their personality type.
-- **Fish and Insect Hunting Conditions**: Determine ideal times, weather, and locations for fishing and bug catching.
 
 ## Project Structure
 - **data**: Contains the raw data files.
@@ -18,6 +17,7 @@ This tool helps *Animal Crossing New Horizons (ACNH)* players plan a five-star i
 - Python
 - pandas library
 - numpy
+- jupyter notebook
 
 ### Installation
 1. Clone this repo.
