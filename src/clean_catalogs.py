@@ -16,10 +16,7 @@ def clean_catalog(df, catalog_name, required_columns):
 def clean_and_concat_catalogs(catalogs):
     """Cleans and concatenates all relevant catalogs into a single DataFrame."""
     relevant_catalogs = [
-        'accessories', 'art', 'bags', 'bottoms', 'construction', 'dress-up',
-        'fencing', 'floors', 'fossils', 'headwear', 'housewares', 'miscellaneous',
-        'music', 'other', 'photos', 'posters', 'reactions', 'recipes', 'rugs', 'shoes',
-        'socks', 'tools', 'tops', 'umbrellas', 'wallpaper'
+        'accessories', 'art', 'bags', 'bottoms', 'dress-up', 'headwear', 'housewares', 'rugs', 'shoes', 'socks', 'tools', 'tops', 'umbrellas'
     ]
     required_columns = [
         'Unique Entry ID', 'Name', 'Catalog', 'Source', 'Source Notes', 
@@ -50,10 +47,26 @@ def update_seasonal_availability(rarity_df):
     # Define partial match
     partial_mapping = {
         'Festive Season': 'Winter', 
+        'January 20 - February 18': 'Winter',
+        'Dec 22 - Jan 19': 'Winter',
+        'February 19 - March 20': 'Winter',
+        'Winter': 'Winter',
         'Mushroom Season': 'Fall',
         'Maple Leaf Season': 'Fall',
+        'September 23 - October 22': 'Fall',
+        'November 22 - December 21': 'Fall',
+        'October 23 - November 21': 'Fall',
+        'Fall': 'Fall',
         'Wedding Season': 'Summer',
-        'Cherry-Blossom Season': 'Spring'
+        'June 21 - July 22': 'Summer',
+        'May 21 - June 20': 'Summer',
+        'July 23 - August 22': 'Summer', 
+        'August 23 - September 22': 'Summer',
+        'Summer': 'Summer',
+        'Cherry-Blossom Season': 'Spring',
+        'March 21 - April 19': 'Spring',
+        'April 20 - May 20': 'Spring',
+        'Spring': 'Spring'
     }
     for column in ['Source Notes', 'Source']:
         for partial_value, season in partial_mapping.items():
