@@ -54,11 +54,8 @@ This project utilizes Python 3.11.9. Please reference [the official python docum
 ### Rarity Analysis
 #### Pre-work
 #### Setting criteria and establishing logic
-<<<<<<< HEAD
-**Defining an item**
-I went into this project knowing that the dataset included some irrelevant components from the game. For example, *achievements* don't make sense in the context of a rarity analysis. 
-=======
-##### Defining an item
+
+**Defining an Item**
 I went into this project knowing that the dataset included components from the game that don't make sense to be included in this analysis. For example, *achievements* are not items.
 
 For relevancy and simplicity's sake: I decided to limit the scope to include: accessories, art, bags, bottoms, dress-up, headwear, housewares, rugs, shoes, socks, tools, tops, umbrellas. This still yields over 8,000 rows/items for the analysis.
