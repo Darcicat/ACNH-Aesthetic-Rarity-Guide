@@ -20,7 +20,7 @@ def clean_and_concat_catalogs(catalogs):
     ]
     required_columns = [
         'Unique Entry ID', 'Name', 'Catalog', 'Source', 'Source Notes', 
-        'Seasonal Availability', 'Buy'
+        'Seasonal Availability', 'Buy', 'Genuine'
     ]
     dfs = []
     for catalog_name in relevant_catalogs:
@@ -51,6 +51,7 @@ def update_seasonal_availability(rarity_df):
         'Dec 22 - Jan 19': 'Winter',
         'February 19 - March 20': 'Winter',
         'Winter': 'Winter',
+        'snow-person': 'Winter',
         'Mushroom Season': 'Fall',
         'Maple Leaf Season': 'Fall',
         'September 23 - October 22': 'Fall',
@@ -86,7 +87,7 @@ def load_cleaned_data():
     """Loads the cleaned, concatenated catalog csv."""
     src_dir = Path(__file__).resolve().parent #locate directory
     project_root = src_dir.parent #move up to project root
-    cleaned_csv_path = project_root / 'cleaned_data' / 'items_for_rarity.csv'
+    cleaned_csv_path = project_root / 'cleaned_data' / 'items.csv'
 
     if not cleaned_csv_path.exists():
         raise FileNotFoundError(f"Cleaned data file not found: {cleaned_csv_path}")
@@ -105,7 +106,7 @@ def main():
     print(f"Updated Seasonal Availability for {updated_df.shape[0]} rows.")
     
     # Step 3: Save to CSV
-    save_to_csv(updated_df, filename='items_for_rarity.csv')
+    save_to_csv(updated_df, filename='items.csv')
 
 if __name__ == "__main__":
     main()
