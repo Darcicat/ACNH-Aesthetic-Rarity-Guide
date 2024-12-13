@@ -23,7 +23,7 @@ def clean_and_concat_catalogs(catalogs):
         'Seasonal Availability', 'Buy', 'Genuine'
     ]
     dfs = []
-    for catalog_name in relevant_catalogs:
+    for catalog_name in relevant_catalogs: # Loops through each catalog name to determine if it's in relevant_catalogs
         if catalog_name in catalogs:
             df = catalogs[catalog_name].copy()
             cleaned_df = clean_catalog(df, catalog_name, required_columns)
@@ -85,8 +85,8 @@ def save_to_csv(df, filename, folder='cleaned_data'):
 
 def load_cleaned_data():
     """Loads the cleaned, concatenated catalog csv."""
-    src_dir = Path(__file__).resolve().parent #locate directory
-    project_root = src_dir.parent #move up to project root
+    src_dir = Path(__file__).resolve().parent # locate directory
+    project_root = src_dir.parent # move up to project root
     cleaned_csv_path = project_root / 'cleaned_data' / 'items.csv'
 
     if not cleaned_csv_path.exists():

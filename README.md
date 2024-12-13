@@ -1,6 +1,6 @@
 # ACNH-Aesthetic-Rarity-Guide
 ## Overview
-This tool helps *Animal Crossing New Horizons (ACNH)* players cultivate a five-star island aesthetic by evaluating an item's rarity. 
+This tool helps *Animal Crossing New Horizons (ACNH)* players cultivate a five-star island aesthetic by evaluating the rarity of obtainable items in the game. 
 
 **Item Rarity**: Identify whether an obtainable item in the game is common, normal, scarce, or rare.
 
@@ -90,12 +90,15 @@ Through exploring the dataset, I determined the following criteria for the scale
 
 
 #### Summary of Findings
-- Most of the items in the game are *common*. In fact, over 3/4 (77%) of the analyzed data are considered *common*, while less than 20% are scarce or *rare*.
+- Most of the items in the game are *common*. In fact, over 3/4 (77%) of the analyzed data are considered *common*, while less than 20% are *scarce* or *rare*.
+- Top sources for acquiring items are *Able Sisters*, *Nook's Cranny*, and *Crafting*.
 - Surprisingly, most of the art the Redd tries to pawn off on the island are *genuine*. Only 39% of paintings and statues are *fake*.
-- Only 13% of the analyzed items have *seasonal restrictions*. It is most likely that a seasonal item is available during the *Summer*, and least likely that a seasonal item is available in *Fall*.
+- Only 13% of the analyzed items have *seasonal restrictions*. It is most likely that a seasonal item is available during the *Summer*, and least likely that a seasonal item is available in *Fall*. Only ten items are exclusive to Fall (and 14 items are exclusive to Spring.)
 
 ### Future State
-I have aspirations to build on this project by including a villager gift analysis. 
+It would be ideal for this project to include an **Interactive Web App** that enables the user to search for specific items and/or rarity dimensions, then receive a summary of how rare it is, as well as how, when, and where the item(s) can be obtained. This would likely be built with Dash.
+
+Additionally, I have aspirations to build on this project by including a villager gift analysis. 
 
 **Villager Gift Recommendations**: Identify the best gifts for each villager based on their personality and style.
 
