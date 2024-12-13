@@ -49,7 +49,9 @@ This project utilizes Python 3.11.9. Please reference [the official python docum
 4. Install the requirements (run this command from your terminal: **pip install -r requirements.txt**)
 5. Change directories to the src folder and load the data (run this command from your terminal: **python initial_load.py**)
 6. Clean the data (run this command from your terminal: **python clean_catalogs.py**)
-7. View results and analysis in Juypter Notebook (run this command from your terminal: **jupyter notebook**)
+7. Assign rarity (run this command from your terminal: **python assign_rarity.py**)
+8. Move back up to the Root Directory (run this command from your terminal: **cd ..**)
+9. View pre-work, results and analysis in Juypter Notebook (run this command from your terminal: **jupyter notebook**)
 
 
 ## Project Summary
