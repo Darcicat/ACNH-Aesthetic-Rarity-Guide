@@ -1,17 +1,10 @@
 # ACNH-Aesthetic-Rarity-Guide
 ## Overview
-<<<<<<< HEAD
 This tool helps *Animal Crossing New Horizons (ACNH)* players cultivate a five-star island aesthetic by evaluating an item's rarity. 
 
 **Item Rarity**: Identify whether an obtainable item in the game is common, normal, scarce, or rare.
 
 By highlighting the game's exclusive and/or abundant items, players can more effectively progress toward their desired island aesthetic.
-=======
-This tool helps *Animal Crossing New Horizons (ACNH)* players cultivate a five-star island aesthetic by surfacing item rarity and ideal gifts for the villagers inhabiting the island.
-
-- **Item Rarity**: Identify whether an obtainable item in the game is common, normal, scarce, or rare.
-- **Villager Gift Recommendations**: Identify the best gifts for each villager based on their personality and style.
->>>>>>> 0c952e4bc0682a697ef803029bd4e24a1609dac7
 
 ### Data Source
 ACNH Aesthetic Rarity Guide leverages a public dataset found on Kaggle, [Animal Crossing New Horizon's Catalog](https://www.kaggle.com/datasets/jessicali9530/animal-crossing-new-horizons-nookplaza-dataset). The dataset contains 30 CSVs listing various items, villagers, clothing, and other collectibles from the game. 
@@ -23,12 +16,9 @@ ACNH Aesthetic Rarity Guide leverages a public dataset found on Kaggle, [Animal 
 **Clean and operate on the data while combining them**
 - Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.
 
-<<<<<<< HEAD
 **Visualize / Present your data**
 - Make 3 plotly visualizations to display your data.
 
-=======
->>>>>>> 0c952e4bc0682a697ef803029bd4e24a1609dac7
 **Best practices: Enhance your project to a higher tier that will impress employers and help other programmers understand your project.**
 - Utilize a virtual environment and include instructions in your README on how the user should set one up.
 - Build a custom data dictionary and include it either in your README or as a separate document.
@@ -51,19 +41,14 @@ This project utilizes Python 3.11.9. Please reference [the official python docum
 - jupyter notebook
 
 ### Installation
-<<<<<<< HEAD
-2. Clone the repo (run this command from your terminal: **git clone https://github.com/Darcicat/ACNH-Aesthetic-Rarity-Guide.git**)
-3. Create a virtual environment (run this command from your terminal: **python -m venv venv**)
-4. Activate the virtual environment (this command will differ per your OS. **[Learn more](https://docs.python.org/3/library/venv.html)**)
-5. Install the requirements (run this command from your terminal: **pip install -r requirements.txt**)
-6. Change directories to the src folder and load the data (run this command from your terminal: **python initial_load.py**)
-7. Clean the data (run this command from your terminal: **python clean_catalogs.py**)
-8. View results and analysis in Juypter Notebook (run this command from your terminal: **jupyter notebook**)
-=======
-1. Clone this repo (https://github.com/Darcicat/ACNH-Aesthetic-Rarity-Guide.git).
-2. Run initial setup and data cleaning scripts located in the src directory: initial_load.py and clean_catalogs.py
-3. View results and analysis in Juypter Notebook.
->>>>>>> 0c952e4bc0682a697ef803029bd4e24a1609dac7
+1. Clone the repo (run this command from your terminal: **git clone https://github.com/Darcicat/ACNH-Aesthetic-Rarity-Guide.git**)
+2. Create a virtual environment (run this command from your terminal: **python -m venv venv**)
+3. Activate the virtual environment (this command will differ per your OS. **[Learn more](https://docs.python.org/3/library/venv.html)**)
+4. Install the requirements (run this command from your terminal: **pip install -r requirements.txt**)
+5. Change directories to the src folder and load the data (run this command from your terminal: **python initial_load.py**)
+6. Clean the data (run this command from your terminal: **python clean_catalogs.py**)
+7. View results and analysis in Juypter Notebook (run this command from your terminal: **jupyter notebook**)
+
 
 ## Project Summary
 ### Rarity Analysis
@@ -74,8 +59,7 @@ This project utilizes Python 3.11.9. Please reference [the official python docum
 I went into this project knowing that the dataset included some irrelevant components from the game. For example, *achievements* don't make sense in the context of a rarity analysis. 
 =======
 ##### Defining an item
-I went into this project knowing that the dataset included components from the game that don't make sense to be included in this analysis. For example, *achievements* are not items. I decided to limit the scope of the analysis to cover the following item types from the dataset: accessories, art, bags, bottoms, dress-up, headwear, housewares, rugs, shoes, socks, tools, tops, umbrellas,
->>>>>>> 0c952e4bc0682a697ef803029bd4e24a1609dac7
+I went into this project knowing that the dataset included components from the game that don't make sense to be included in this analysis. For example, *achievements* are not items.
 
 For relevancy and simplicity's sake: I decided to limit the scope to include: accessories, art, bags, bottoms, dress-up, headwear, housewares, rugs, shoes, socks, tools, tops, umbrellas. This still yields over 8,000 rows/items for the analysis.
 
@@ -95,28 +79,20 @@ Through exploring the dataset, I determined the following criteria for the scale
 **Normal Items** are tied to the main storyline or early-game progression that every player encounters. Examples:
 * Items given by Tom Nook, Isabelle, or villagers as part of tutorials or early milestones.
 * Items obtained by completing museum milestones.
-<<<<<<< HEAD
 * Fake pieces of art.
-=======
->>>>>>> 0c952e4bc0682a697ef803029bd4e24a1609dac7
 
 **Scarce Items** have limited availability, and are tied to specific events or chance-based systems.
 * Items from seasonal events, such as Birthday or Turkey Day.
 * Items left to chance, such as rugs from Sahara or artifacts from Gulliver's travels.
 
 **Rare Items** require significant effort, advanced progression, or special conditions to obtain. Examples:
-<<<<<<< HEAD
 * Genuine pieces of art.
-=======
-* Items that are high-cost.
->>>>>>> 0c952e4bc0682a697ef803029bd4e24a1609dac7
 * Items requiring a 5-star island rating.
 * Balloon-only DIYs.
 * Friendship-level exclusives.
 
 
 #### Summary of Findings
-<<<<<<< HEAD
 - Most of the items in the game are *common*. In fact, over 3/4 (77%) of the analyzed data are considered *common*, while less than 20% are scarce or *rare*.
 - Surprisingly, most of the art the Redd tries to pawn off on the island are *genuine*. Only 39% of paintings and statues are *fake*.
 - Only 13% of the analyzed items have *seasonal restrictions*. It is most likely that a seasonal item is available during the *Summer*, and least likely that a seasonal item is available in *Fall*.
@@ -127,5 +103,3 @@ I have aspirations to build on this project by including a villager gift analysi
 **Villager Gift Recommendations**: Identify the best gifts for each villager based on their personality and style.
 
 By recommending ideal gifts for villagers, players can build stronger bonds with among island residents and work toward the 5-star island rating.
-=======
->>>>>>> 0c952e4bc0682a697ef803029bd4e24a1609dac7
