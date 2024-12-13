@@ -9,6 +9,8 @@ By highlighting the game's exclusive and/or abundant items, players can more eff
 ### Data Source
 ACNH Aesthetic Rarity Guide leverages a public dataset found on Kaggle, [Animal Crossing New Horizon's Catalog](https://www.kaggle.com/datasets/jessicali9530/animal-crossing-new-horizons-nookplaza-dataset). The dataset contains 30 CSVs listing various items, villagers, clothing, and other collectibles from the game. 
 
+A Data Dictionary is available in the project root directory.
+
 ## Capstone Project Features
 **Loading data**
 - Read at least two data files (CSVs).
@@ -27,7 +29,7 @@ ACNH Aesthetic Rarity Guide leverages a public dataset found on Kaggle, [Animal 
 - Annotate your code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md. Tidy up your notebook, and make sure you don’t have any empty cells or incomplete cells that don’t do anything. Make sure it’s all functional before your final github commit.
 
 ## Project Structure
-- **data**: Contains the raw data files, as well as a data dictionary.
+- **data**: Contains the raw data files.
 - **cleaned_data**: Processed versions of the data files after cleaning.
 - **notebooks**: Jupyter notebooks for data exploration and visualization.
 - **src**: Contains python scripts that process the data.
